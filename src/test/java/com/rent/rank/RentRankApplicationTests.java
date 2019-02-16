@@ -1,4 +1,4 @@
-package com.rent.rank.rentRank;
+package com.rent.rank;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.rent.rank.rentRank;
+package com.rent.rank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
