@@ -18,7 +18,7 @@ public class BuildingService {
         return buildingRepository.findBuildingByAddress(address);
     }
 
-    public List<Building> findByPlygon(Polygon polygon){
+    public List<Building> findByPolygon(Polygon polygon){
         return buildingRepository.findByLocationWithin(polygon);
     }
 }
