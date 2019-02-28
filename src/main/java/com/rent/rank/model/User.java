@@ -13,7 +13,8 @@ public class User {
     private String userName;
     private String name;
     private String surname;
-    private Email email;
+    @Email
+    private String email;
     private List<Rent> rents;
 
     public String getId() {
@@ -48,11 +49,11 @@ public class User {
         this.surname = surname;
     }
 
-    public Email getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(Email email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
