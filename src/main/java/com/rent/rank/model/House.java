@@ -6,8 +6,6 @@ import java.util.List;
 
 public class House extends Home {
 
-    private String id;
-
     private String address;
     private GeoJsonPoint location;
     private int numFloors;
@@ -16,17 +14,6 @@ public class House extends Home {
 
 
     // TODO chalet, adosada, semiadosada
-
-
-    @Override
-    public String getId() {
-        return id;
-    }
-
-    @Override
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getAddress() {
         return address;

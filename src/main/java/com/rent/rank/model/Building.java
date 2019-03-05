@@ -9,6 +9,7 @@ import java.util.List;
 public class Building {
 
     private String id;
+    private long buildingId;
     private String address;
     private GeoJsonPoint location;
     private int floors;
@@ -22,6 +23,14 @@ public class Building {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public long getBuildingId() {
+        return buildingId;
+    }
+
+    public void setBuildingId(long buildingId) {
+        this.buildingId = buildingId;
     }
 
     public String getAddress() {

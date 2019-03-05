@@ -15,6 +15,7 @@ public class User {
     private String surname;
     @Email
     private String email;
+    private String password;
     private List<Rent> rents;
 
     public String getId() {

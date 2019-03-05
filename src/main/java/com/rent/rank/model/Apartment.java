@@ -5,8 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Apartment extends Home{
 
-    private String id;
-
+    private long apartmentId;
     private String buildingId;
     private int floor;
     private String door;
@@ -14,14 +13,12 @@ public class Apartment extends Home{
     private boolean lastFloor;
     private boolean interior;
 
-    @Override
-    public String getId() {
-        return id;
+    public long getApartmentId() {
+        return apartmentId;
     }
 
-    @Override
-    public void setId(String id) {
-        this.id = id;
+    public void setApartmentId(long apartmentId) {
+        this.apartmentId = apartmentId;
     }
 
     public String getBuildingId() {
