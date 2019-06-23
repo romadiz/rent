@@ -10,7 +10,6 @@ public class House extends Home {
     private GeoJsonPoint location;
     private int numFloors;
     private int year;
-    private List<Rent> renters;
 
 
     // TODO chalet, adosada, semiadosada

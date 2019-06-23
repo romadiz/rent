@@ -2,6 +2,8 @@ package com.rent.rank.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Document
 public class Home {
 
@@ -15,6 +17,7 @@ public class Home {
     private boolean rooftop;
     private boolean pets;
     private boolean particular;
+    private List<Rent> renters;
 
     public String getId() {
         return id;
@@ -86,5 +89,13 @@ public class Home {
 
     public void setParticular(boolean particular) {
         this.particular = particular;
+    }
+
+    public List<Rent> getRenters() {
+        return renters;
+    }
+
+    public void setRenters(List<Rent> renters) {
+        this.renters = renters;
     }
 }
